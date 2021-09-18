@@ -6,7 +6,7 @@ import { Wrapper, Content } from './BreadCrumb.styles'
 const BreadCrumb = ({ movieTitle }) => (
     <Wrapper>
         <Content>
-            <Link to='/'>
+            <Link to='/' className='link-home'>
                 <span>Home</span>
             </Link>
             <span>|</span>
