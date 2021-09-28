@@ -26,11 +26,11 @@ const Home = () => {
     return (
         <>
             {
-                !searchTerm && state.results[8] ?
+                !searchTerm && state.results[0] ?
                     <HeroImage
-                        image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[8].backdrop_path}`}
-                        title={state.results[8].original_title}
-                        text={state.results[8].overview}
+                        image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
+                        title={state.results[0].original_title}
+                        text={state.results[0].overview}
                     />
                 : null
             }

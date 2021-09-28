@@ -21,20 +21,23 @@ const SearchBar = ({ setSearchTerm }) => {
 
         return () => clearTimeout(timer)
     }, [setSearchTerm, state])
-    
 
-    return (
-        <Wrapper>
-            <Content>
-                <img src={searchIcon} alt="search-icon" />
-                <input
-                    type="text"
-                    placeholder="Search Movie"
-                    onChange={event => setState(event.currentTarget.value)}
-                    value={state}
-                />
-            </Content>
-        </Wrapper>
+
+    return ( <
+        Wrapper >
+        <
+        Content >
+        <
+        img src = { searchIcon }
+        alt = "search-icon" / >
+        <
+        input type = "text"
+        placeholder = "Search Movie"
+        onChange = { event => setState(event.currentTarget.value) }
+        value = { state }
+        /> < /
+        Content > <
+        /Wrapper>
     )
 }
 
